@@ -118,6 +118,8 @@ public class EventClient {
         Event event = new Event();
         event.setSocSecNum(node.get("socSecNum").asText());
         event.setEventType(node.get("eventType").asText());
+        
+        //value is the Person information, this should be stored in another table but I ran out of time. 
         event.setValue(node.get("value").toString());
         
         // Parsing the timestamp from the JSON and set it in the Event object
