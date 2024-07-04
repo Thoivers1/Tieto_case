@@ -168,7 +168,7 @@ private void updatePerson(JsonNode eventNode){
             person.setPhone(eventNode.get("value").asText());
             break;
         default:
-            log warning or error 
+            log warning or an error
 }
 
 */
